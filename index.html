@@ -4,37 +4,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- tailwind and daisyui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <title>T-Ticket</title>
+    <!-- tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- font -->
-
-    <!-- tailwind colour -->
+    <!-- font manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/60d19e3409.js" crossorigin="anonymous"></script>
+    <!-- tail wind colour -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
 
 <body>
     <header>
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl ">T-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button type="submit" class="btn bg-green-200 text-xl"><i class="fa-solid fa-van-shuttle"></i><span
+                            class="text-green-500">Bus</span></button>
+                </div>
+            </div>
+        </nav>
 
     </header>
     <main>
+        <section>
+            <div class="hero min-h-screen" style="background-image: url(styles/images/banner.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with <span class="text-green-500">T
+                                Paribahan</span></h1>
+                        <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The
+                            integrated testing features allow for a streamlined </p>
+                        <button class="btn bg-green-300">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- coupon -->
+        <section class="grid items-center">
+            <div class="items-center">
+                <h1> Best offers for you</h1>
+            </div>
+           <div class="">
+            <div>
+                <div class="stats bg-yellow-400 ">
+
+                    <div class="stat">
+                        <div class="text-3xl">15% OFF</div>
+                        <div class="text-xl">on your next purchase <br> use by January 2024</div>
+                        <div class="stat-actions">
+                        </div>
+                    </div>
+
+                    <div class="stat">
+                        <div class="stat-title text-2xl">NEW15</div>
+                        <div class="">Coupon Code</div>
+                        <div class="stat-actions">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <div class="stats bg-rose-400 ">
+
+                        <div class="stat">
+                            <div class="text-3xl">20% OFF</div>
+                            <div class="text-xl">on your next purchase <br> use by January 2024</div>
+                            <div class="stat-actions">
+                            </div>
+                        </div>
+
+                        <div class="stat">
+                            <div class="stat-title text-2xl">Couple 20</div>
+                            <div class="">Coupon Code</div>
+                            <div class="stat-actions">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+           </div>
+        </section>
 
     </main>
     <footer>
 
     </footer>
 
+    <script src="js/project.js"></script>
 </body>
 
 </html>
